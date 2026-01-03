@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE Fashion - Premium Clothing Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-dark text-white py-2 small">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-truck me-2"></i> Free shipping on orders over $99</span>
+            <div>
+                <a href="#" class="text-white text-decoration-none me-3">Track Order</a>
+                <a href="#" class="text-white text-decoration-none">Help</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                LUXE<span class="text-muted fw-light">fashion</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Women</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dresses</a></li>
+                            <li><a class="dropdown-item" href="#">Tops</a></li>
+                            <li><a class="dropdown-item" href="#">Pants</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Men</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Pants</a></li>
+                            <li><a class="dropdown-item" href="#">Jackets</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#new">New Arrivals</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#sale">Sale</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark"><i class="bi bi-search fs-5"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person fs-5"></i></a>
+                    <a href="#" class="text-dark position-relative">
+                        <i class="bi bi-bag fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <span class="badge bg-dark mb-3 px-3 py-2">NEW COLLECTION 2024</span>
+                    <h1 class="display-3 fw-bold mb-4">
+                        Elevate Your <span class="text-decoration-underline">Style</span>
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Discover the latest trends in fashion. Premium quality, sustainable materials, timeless designs for the modern you.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-dark btn-lg px-5">Shop Now</a>
+                        <a href="#new" class="btn btn-outline-dark btn-lg px-5">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="hero-image-box">
+                        <div class="hero-placeholder">
+                            <i class="bi bi-person-standing display-1"></i>
+                            <p class="mt-3">Fashion Model</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-card position-relative overflow-hidden">
+                        <div class="category-bg bg-dark d-flex align-items-center justify-content-center">
+                            <i class="bi bi-gender-female display-1 text-white opacity-50"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3 class="text-white fw-bold">Women</h3>
+                            <a href="#" class="btn btn-light btn-sm">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card position-relative overflow-hidden">
+                        <div class="category-bg bg-secondary d-flex align-items-center justify-content-center">
+                            <i class="bi bi-gender-male display-1 text-white opacity-50"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3 class="text-white fw-bold">Men</h3>
+                            <a href="#" class="btn btn-light btn-sm">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card position-relative overflow-hidden">
+                        <div class="category-bg bg-warning d-flex align-items-center justify-content-center">
+                            <i class="bi bi-bag-heart display-1 text-white opacity-50"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3 class="text-white fw-bold">Accessories</h3>
+                            <a href="#" class="btn btn-light btn-sm">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <div>
+                    <h2 class="display-6 fw-bold">Trending Now</h2>
+                    <p class="text-muted mb-0">Best sellers this week</p>
+                </div>
+                <a href="#" class="btn btn-outline-dark">View All</a>
+            </div>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-light d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <span class="badge bg-dark position-absolute top-0 start-0 m-2">New</span>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Dresses</p>
+                            <h6 class="mb-1">Elegant Summer Dress</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$89.00</span>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-light d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Tops</p>
+                            <h6 class="mb-1">Classic White Blouse</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$45.00 <del class="text-muted small">$65.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-light d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Jackets</p>
+                            <h6 class="mb-1">Leather Biker Jacket</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$189.00</span>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-light d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Eco</span>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Pants</p>
+                            <h6 class="mb-1">Organic Denim Jeans</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$75.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-danger mb-2">SUMMER SALE</span>
+                    <h2 class="display-5 fw-bold">Up to 50% Off</h2>
+                    <p class="lead mb-0">Don't miss our biggest sale of the year. Limited time only!</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="#" class="btn btn-light btn-lg px-5">Shop Sale</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">New Arrivals</h2>
+                <p class="text-muted">Fresh styles just landed</p>
+            </div>
+            <div class="row g-4">
+                <!-- Product 5 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card bg-white">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart fs-5"></i>
+                            </button>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Men's Shirts</p>
+                            <h6 class="mb-1">Oxford Button Down</h6>
+                            <span class="fw-bold">$65.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card bg-white">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart fs-5"></i>
+                            </button>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Accessories</p>
+                            <h6 class="mb-1">Leather Tote Bag</h6>
+                            <span class="fw-bold">$129.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card bg-white">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart fs-5"></i>
+                            </button>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Women's Shoes</p>
+                            <h6 class="mb-1">Block Heel Sandals</h6>
+                            <span class="fw-bold">$95.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="col-6 col-lg-3">
+                    <div class="product-card bg-white">
+                        <div class="product-image position-relative">
+                            <div class="product-placeholder bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-image display-4 text-muted"></i>
+                            </div>
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart fs-5"></i>
+                            </button>
+                            <div class="product-actions position-absolute bottom-0 start-0 end-0 p-2">
+                                <button class="btn btn-dark w-100">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info p-3">
+                            <p class="text-muted small mb-1">Men's Pants</p>
+                            <h6 class="mb-1">Slim Fit Chinos</h6>
+                            <span class="fw-bold">$59.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <i class="bi bi-truck display-5 text-muted mb-3"></i>
+                    <h6>Free Shipping</h6>
+                    <p class="text-muted small mb-0">On orders over $99</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <i class="bi bi-arrow-repeat display-5 text-muted mb-3"></i>
+                    <h6>Easy Returns</h6>
+                    <p class="text-muted small mb-0">30-day return policy</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <i class="bi bi-shield-check display-5 text-muted mb-3"></i>
+                    <h6>Secure Payment</h6>
+                    <p class="text-muted small mb-0">100% secure checkout</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <i class="bi bi-headset display-5 text-muted mb-3"></i>
+                    <h6>24/7 Support</h6>
+                    <p class="text-muted small mb-0">Dedicated support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="fw-bold mb-3">Join Our Newsletter</h3>
+                    <p class="text-muted mb-4">Subscribe to get special offers, free giveaways, and exclusive deals.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                        <button class="btn btn-dark btn-lg px-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">LUXE<span class="fw-light">fashion</span></h5>
+                    <p class="text-muted small">Premium fashion for the modern lifestyle. Quality, sustainability, and style.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-pinterest fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-4">Shop</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Women</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Men</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Accessories</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-4">Help</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Shipping</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Returns</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-4">Company</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Sustainability</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-4">Contact</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Fashion Ave, Style City</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@luxefashion.com</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (555) 123-LUXE</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">&copy; 2024 LUXE Fashion. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <img src="https://via.placeholder.com/200x30/333333/FFFFFF?text=Payment+Methods" alt="Payment Methods" class="img-fluid" style="max-height: 30px; opacity: 0.5;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

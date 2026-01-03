@@ -1,0 +1,45 @@
+/* Green Haven - Plants Store Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+}
+
+.delay-100 {
+    animation-delay: 0.5s;
+}
+
+.delay-200 {
+    animation-delay: 1s;
+}
+
+.delay-300 {
+    animation-delay: 1.5s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8fff8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d5a3d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1a3a24;
+}

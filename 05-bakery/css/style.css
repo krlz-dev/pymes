@@ -1,0 +1,128 @@
+/* Sweet Delights Bakery - Styles */
+
+:root {
+    --primary-pink: #d63384;
+    --primary-brown: #8B4513;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 76px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #fff5f8 0%, #fff 100%);
+}
+
+.hero-image-container {
+    position: relative;
+}
+
+.hero-circle {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #d63384 0%, #e91e63 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.floating-badge {
+    position: absolute;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-weight: 600;
+}
+
+.badge-1 {
+    top: 20%;
+    left: 0;
+    animation: float 3s ease-in-out infinite 0.5s;
+}
+
+.badge-2 {
+    bottom: 20%;
+    right: 0;
+    animation: float 3s ease-in-out infinite 1s;
+}
+
+/* Product Cards */
+.product-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.product-img {
+    height: 200px;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #d63384 0%, #e91e63 100%);
+}
+
+.bg-gradient-pink {
+    background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+}
+
+.bg-gradient-yellow {
+    background: linear-gradient(135deg, #ffd93d 0%, #f6a623 100%);
+}
+
+.bg-gradient-brown {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+}
+
+/* About Section */
+.about-img-container {
+    position: relative;
+}
+
+.about-main-img {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+/* Nav Pills */
+.nav-pills .nav-link {
+    color: #6c757d;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #d63384;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .floating-badge {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Scoops - Artisan Ice Cream</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-pink': '#ff6b9d',
+                        'ice-blue': '#74c0fc',
+                        'ice-mint': '#63e6be',
+                        'ice-yellow': '#ffd43b',
+                        'ice-purple': '#b197fc',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gradient-to-b from-pink-50 to-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-4xl">🍦</span>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-ice-pink to-ice-purple bg-clip-text text-transparent">
+                        Frosty Scoops
+                    </span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-ice-pink transition">Home</a>
+                    <a href="#flavors" class="text-gray-700 hover:text-ice-pink transition">Flavors</a>
+                    <a href="#about" class="text-gray-700 hover:text-ice-pink transition">About</a>
+                    <a href="#locations" class="text-gray-700 hover:text-ice-pink transition">Locations</a>
+                    <a href="#contact" class="text-gray-700 hover:text-ice-pink transition">Contact</a>
+                    <a href="#order" class="bg-gradient-to-r from-ice-pink to-ice-purple text-white px-6 py-2 rounded-full hover:shadow-lg transition">
+                        Order Now
+                    </a>
+                </div>
+                <button class="md:hidden text-2xl">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-ice-yellow/20 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        🌟 Handcrafted with Love
+                    </span>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
+                        Life is Better with
+                        <span class="bg-gradient-to-r from-ice-pink via-ice-purple to-ice-blue bg-clip-text text-transparent">
+                            Ice Cream
+                        </span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Discover our handcrafted artisan ice cream made with real ingredients and a whole lot of happiness. 50+ unique flavors waiting for you!
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#flavors" class="bg-gradient-to-r from-ice-pink to-ice-purple text-white px-8 py-4 rounded-full hover:shadow-lg transition text-lg font-medium">
+                            Explore Flavors
+                        </a>
+                        <a href="#locations" class="border-2 border-ice-pink text-ice-pink px-8 py-4 rounded-full hover:bg-ice-pink hover:text-white transition text-lg font-medium">
+                            Find a Store
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10">
+                        <div class="w-80 h-80 mx-auto bg-gradient-to-br from-ice-pink via-ice-purple to-ice-blue rounded-full flex items-center justify-content-center shadow-2xl animate-float">
+                            <span class="text-9xl">🍨</span>
+                        </div>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="absolute top-10 left-10 w-16 h-16 bg-ice-yellow rounded-full animate-bounce-slow flex items-center justify-center text-2xl">🍓</div>
+                    <div class="absolute bottom-10 left-0 w-12 h-12 bg-ice-mint rounded-full animate-bounce-slow delay-100 flex items-center justify-center text-xl">🍫</div>
+                    <div class="absolute top-20 right-0 w-14 h-14 bg-ice-blue rounded-full animate-bounce-slow delay-200 flex items-center justify-center text-xl">🥜</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-12 bg-gradient-to-r from-ice-pink via-ice-purple to-ice-blue">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-white text-center">
+                <div>
+                    <div class="text-4xl mb-2">🥛</div>
+                    <h4 class="font-bold">Fresh Dairy</h4>
+                    <p class="text-sm opacity-80">Local farm milk</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-2">🍓</div>
+                    <h4 class="font-bold">Real Fruits</h4>
+                    <p class="text-sm opacity-80">No artificial flavors</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-2">🌿</div>
+                    <h4 class="font-bold">Natural Ingredients</h4>
+                    <p class="text-sm opacity-80">Clean labels</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-2">💚</div>
+                    <h4 class="font-bold">Vegan Options</h4>
+                    <p class="text-sm opacity-80">Plant-based love</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavors Section -->
+    <section id="flavors" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-ice-pink font-medium">Our Menu</span>
+                <h2 class="text-4xl font-bold text-gray-800 mt-2">Popular Flavors</h2>
+                <p class="text-gray-600 mt-2">Handcrafted daily with love</p>
+            </div>
+
+            <!-- Flavor Categories -->
+            <div class="flex justify-center gap-4 mb-12 flex-wrap">
+                <button class="px-6 py-2 bg-ice-pink text-white rounded-full">All</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-ice-pink hover:text-white transition">Classic</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-ice-pink hover:text-white transition">Fruity</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-ice-pink hover:text-white transition">Specialty</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-ice-pink hover:text-white transition">Vegan</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Flavor 1 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-pink-200 to-pink-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🍓</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Strawberry Dream</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Fresh strawberries swirled in creamy vanilla</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$4.99</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 2 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-amber-200 to-amber-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🍫</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Double Chocolate</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Rich chocolate with chocolate chunks</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$5.49</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 3 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-green-200 to-green-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🌿</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Mint Chip</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Cool mint with dark chocolate chips</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$4.99</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 4 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-yellow-200 to-yellow-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🍌</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Banana Caramel</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Ripe bananas with salted caramel swirl</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$5.29</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 5 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-purple-200 to-purple-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🫐</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Blueberry Bliss</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Wild blueberries in vanilla cream</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$5.49</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 6 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-orange-200 to-orange-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🥜</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Peanut Butter Cup</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Creamy PB with chocolate cups</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$5.99</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 7 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-red-200 to-red-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🍒</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Cherry Garcia</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Cherry ice cream with chocolate flakes</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$5.49</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+                <!-- Flavor 8 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition group">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-teal-200 to-teal-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <span class="text-4xl">🥥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Coconut Paradise</h3>
+                    <p class="text-gray-500 text-center text-sm mt-2">Vegan coconut with toasted flakes</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-ice-pink font-bold text-lg">$5.99</span>
+                        <button class="bg-ice-pink text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-ice-blue/20 to-ice-mint/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-ice-pink font-medium">Our Story</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2 mb-6">Scooping Happiness Since 1998</h2>
+                    <p class="text-gray-600 mb-4">
+                        What started as a small ice cream cart in the park has grown into a beloved local chain with 15 stores across the city. Our founder, Maria Rodriguez, believed that ice cream should bring joy - and that means using only the best ingredients.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        We source our dairy from local farms, use real fruits, and create unique flavors that you won't find anywhere else. Every scoop is made with love and a commitment to quality.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-ice-pink">25+</div>
+                            <div class="text-gray-500 text-sm">Years</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-ice-pink">50+</div>
+                            <div class="text-gray-500 text-sm">Flavors</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-ice-pink">15</div>
+                            <div class="text-gray-500 text-sm">Stores</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="bg-gradient-to-br from-ice-pink to-ice-purple p-12 rounded-3xl text-center text-white">
+                        <span class="text-8xl">🍦</span>
+                        <h3 class="text-2xl font-bold mt-4">Made Fresh Daily</h3>
+                        <p class="opacity-80 mt-2">Every batch crafted with care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="py-16 bg-gradient-to-r from-ice-yellow via-ice-pink to-ice-purple">
+        <div class="max-w-7xl mx-auto px-4 text-center text-white">
+            <span class="text-6xl">🎉</span>
+            <h2 class="text-4xl font-bold mt-4">Happy Hour Special!</h2>
+            <p class="text-xl mt-2 opacity-90">Buy 2 Get 1 Free - Every Day 3PM - 5PM</p>
+            <a href="#order" class="inline-block mt-6 bg-white text-ice-pink px-8 py-4 rounded-full font-bold hover:shadow-lg transition">
+                Order Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-ice-pink font-medium">Find Us</span>
+                <h2 class="text-4xl font-bold text-gray-800 mt-2">Our Locations</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-ice-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="bi bi-geo-alt-fill text-ice-pink text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Downtown</h3>
+                    <p class="text-gray-500 mt-2">123 Main Street</p>
+                    <p class="text-gray-500">Mon-Sun: 11AM - 10PM</p>
+                    <a href="#" class="text-ice-pink font-medium mt-4 inline-block">Get Directions →</a>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-ice-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="bi bi-geo-alt-fill text-ice-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Beach Side</h3>
+                    <p class="text-gray-500 mt-2">456 Ocean Avenue</p>
+                    <p class="text-gray-500">Mon-Sun: 10AM - 11PM</p>
+                    <a href="#" class="text-ice-blue font-medium mt-4 inline-block">Get Directions →</a>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-ice-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="bi bi-geo-alt-fill text-ice-purple text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Mall Plaza</h3>
+                    <p class="text-gray-500 mt-2">789 Shopping Center</p>
+                    <p class="text-gray-500">Mon-Sun: 10AM - 9PM</p>
+                    <a href="#" class="text-ice-purple font-medium mt-4 inline-block">Get Directions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-ice-pink font-medium">Contact Us</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2 mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Have questions about catering, wholesale, or just want to say hi? We'd love to hear from you!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-ice-pink/10 rounded-full flex items-center justify-center">
+                                <i class="bi bi-telephone text-ice-pink text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800">(555) ICE-CREAM</p>
+                                <p class="text-gray-500 text-sm">Mon-Sun 10AM - 10PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-ice-blue/10 rounded-full flex items-center justify-center">
+                                <i class="bi bi-envelope text-ice-blue text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800">hello@frostyscoops.com</p>
+                                <p class="text-gray-500 text-sm">We reply within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="w-10 h-10 bg-ice-pink rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-ice-purple rounded-full flex items-center justify-center text-white hover:bg-purple-600 transition">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-ice-blue rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-white p-8 rounded-3xl shadow-lg">
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <input type="text" placeholder="Your Name" class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-ice-pink">
+                            <input type="email" placeholder="Email" class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-ice-pink">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full border border-gray-200 rounded-xl px-4 py-3 mb-4 focus:outline-none focus:border-ice-pink">
+                        <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-200 rounded-xl px-4 py-3 mb-4 focus:outline-none focus:border-ice-pink"></textarea>
+                        <button type="submit" class="w-full bg-gradient-to-r from-ice-pink to-ice-purple text-white py-4 rounded-xl font-medium hover:shadow-lg transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-3xl">🍦</span>
+                        <span class="text-xl font-bold">Frosty Scoops</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Scooping happiness since 1998. Made with love, served with smiles.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-ice-pink transition">Flavors</a></li>
+                        <li><a href="#" class="hover:text-ice-pink transition">Locations</a></li>
+                        <li><a href="#" class="hover:text-ice-pink transition">Catering</a></li>
+                        <li><a href="#" class="hover:text-ice-pink transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Flavors</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-ice-pink transition">Classic</a></li>
+                        <li><a href="#" class="hover:text-ice-pink transition">Fruity</a></li>
+                        <li><a href="#" class="hover:text-ice-pink transition">Specialty</a></li>
+                        <li><a href="#" class="hover:text-ice-pink transition">Vegan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Get flavor updates & special offers!</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-xl text-gray-800 w-full">
+                        <button class="bg-ice-pink px-4 py-2 rounded-r-xl hover:bg-pink-600 transition">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Frosty Scoops. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

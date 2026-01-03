@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Haven - Plants & Garden Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plant-green': '#2d5a3d',
+                        'plant-light': '#a8d5ba',
+                        'plant-sage': '#87a878',
+                        'plant-earth': '#8b7355',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gradient-to-b from-green-50 to-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-4xl">🌿</span>
+                    <span class="text-2xl font-bold text-plant-green">Green<span class="text-plant-sage">Haven</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-plant-green transition">Home</a>
+                    <a href="#plants" class="text-gray-700 hover:text-plant-green transition">Plants</a>
+                    <a href="#supplies" class="text-gray-700 hover:text-plant-green transition">Supplies</a>
+                    <a href="#about" class="text-gray-700 hover:text-plant-green transition">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-plant-green transition">Contact</a>
+                    <a href="#" class="relative">
+                        <i class="bi bi-cart3 text-2xl text-gray-700"></i>
+                        <span class="absolute -top-2 -right-2 bg-plant-green text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">3</span>
+                    </a>
+                </div>
+                <button class="md:hidden text-2xl text-plant-green">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-plant-light/50 text-plant-green px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        🌱 Bring Nature Home
+                    </span>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-plant-green mb-6">
+                        Transform Your Space with <span class="text-plant-sage">Plants</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Discover our curated collection of indoor and outdoor plants, gardening supplies, and expert care tips. Every plant comes with a happiness guarantee!
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#plants" class="bg-plant-green text-white px-8 py-4 rounded-full hover:bg-green-800 transition text-lg font-medium">
+                            Shop Plants
+                        </a>
+                        <a href="#about" class="border-2 border-plant-green text-plant-green px-8 py-4 rounded-full hover:bg-plant-green hover:text-white transition text-lg font-medium">
+                            Plant Care Tips
+                        </a>
+                    </div>
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 mt-12">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-plant-green">500+</div>
+                            <div class="text-gray-500 text-sm">Plant Varieties</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-plant-green">10K+</div>
+                            <div class="text-gray-500 text-sm">Happy Customers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-plant-green">15+</div>
+                            <div class="text-gray-500 text-sm">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10">
+                        <div class="w-80 h-80 mx-auto bg-gradient-to-br from-plant-light to-plant-sage rounded-full flex items-center justify-center shadow-2xl">
+                            <span class="text-9xl">🪴</span>
+                        </div>
+                    </div>
+                    <!-- Floating plants -->
+                    <div class="absolute top-10 left-0 text-5xl animate-bounce-slow">🌵</div>
+                    <div class="absolute bottom-20 left-10 text-4xl animate-bounce-slow delay-100">🌷</div>
+                    <div class="absolute top-20 right-0 text-5xl animate-bounce-slow delay-200">🌻</div>
+                    <div class="absolute bottom-10 right-10 text-4xl animate-bounce-slow delay-300">🍀</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="#" class="group bg-plant-light/20 p-8 rounded-2xl text-center hover:bg-plant-green hover:text-white transition">
+                    <span class="text-5xl block mb-3">🌿</span>
+                    <span class="font-bold text-plant-green group-hover:text-white transition">Indoor Plants</span>
+                </a>
+                <a href="#" class="group bg-plant-light/20 p-8 rounded-2xl text-center hover:bg-plant-green hover:text-white transition">
+                    <span class="text-5xl block mb-3">🌳</span>
+                    <span class="font-bold text-plant-green group-hover:text-white transition">Outdoor Plants</span>
+                </a>
+                <a href="#" class="group bg-plant-light/20 p-8 rounded-2xl text-center hover:bg-plant-green hover:text-white transition">
+                    <span class="text-5xl block mb-3">🌵</span>
+                    <span class="font-bold text-plant-green group-hover:text-white transition">Succulents</span>
+                </a>
+                <a href="#" class="group bg-plant-light/20 p-8 rounded-2xl text-center hover:bg-plant-green hover:text-white transition">
+                    <span class="text-5xl block mb-3">🌺</span>
+                    <span class="font-bold text-plant-green group-hover:text-white transition">Flowering</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section id="plants" class="py-20 bg-gradient-to-b from-white to-green-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-plant-sage font-medium">Our Collection</span>
+                <h2 class="text-4xl font-bold text-plant-green mt-2">Popular Plants</h2>
+                <p class="text-gray-600 mt-2">Handpicked for your home & garden</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Plant 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-plant-light/50 to-plant-sage/30 flex items-center justify-center">
+                            <span class="text-8xl group-hover:scale-110 transition">🌿</span>
+                        </div>
+                        <span class="absolute top-4 left-4 bg-plant-green text-white text-xs px-3 py-1 rounded-full">Best Seller</span>
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-plant-green hover:text-white transition">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-plant-sage font-medium bg-plant-light/30 px-2 py-1 rounded">Indoor</span>
+                            <div class="flex items-center text-xs text-gray-500">
+                                <i class="bi bi-droplet text-blue-400 me-1"></i> Low Water
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-plant-green text-lg">Monstera Deliciosa</h3>
+                        <p class="text-gray-500 text-sm mt-1">The iconic Swiss cheese plant</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-plant-green font-bold text-xl">$34.99</span>
+                            <button class="bg-plant-green text-white px-4 py-2 rounded-full text-sm hover:bg-green-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plant 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                            <span class="text-8xl group-hover:scale-110 transition">🌱</span>
+                        </div>
+                        <span class="absolute top-4 left-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Easy Care</span>
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-plant-green hover:text-white transition">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-plant-sage font-medium bg-plant-light/30 px-2 py-1 rounded">Indoor</span>
+                            <div class="flex items-center text-xs text-gray-500">
+                                <i class="bi bi-sun text-yellow-400 me-1"></i> Low Light
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-plant-green text-lg">Pothos Golden</h3>
+                        <p class="text-gray-500 text-sm mt-1">Perfect for beginners</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-plant-green font-bold text-xl">$18.99</span>
+                            <button class="bg-plant-green text-white px-4 py-2 rounded-full text-sm hover:bg-green-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plant 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+                            <span class="text-8xl group-hover:scale-110 transition">🌵</span>
+                        </div>
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-plant-green hover:text-white transition">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-plant-sage font-medium bg-plant-light/30 px-2 py-1 rounded">Succulent</span>
+                            <div class="flex items-center text-xs text-gray-500">
+                                <i class="bi bi-droplet text-blue-400 me-1"></i> Drought Tolerant
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-plant-green text-lg">Barrel Cactus</h3>
+                        <p class="text-gray-500 text-sm mt-1">Desert beauty for your home</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-plant-green font-bold text-xl">$24.99</span>
+                            <button class="bg-plant-green text-white px-4 py-2 rounded-full text-sm hover:bg-green-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plant 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center">
+                            <span class="text-8xl group-hover:scale-110 transition">🌸</span>
+                        </div>
+                        <span class="absolute top-4 left-4 bg-pink-500 text-white text-xs px-3 py-1 rounded-full">New</span>
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-plant-green hover:text-white transition">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-plant-sage font-medium bg-plant-light/30 px-2 py-1 rounded">Flowering</span>
+                            <div class="flex items-center text-xs text-gray-500">
+                                <i class="bi bi-sun text-yellow-400 me-1"></i> Bright Light
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-plant-green text-lg">Orchid Phalaenopsis</h3>
+                        <p class="text-gray-500 text-sm mt-1">Elegant blooming beauty</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-plant-green font-bold text-xl">$42.99</span>
+                            <button class="bg-plant-green text-white px-4 py-2 rounded-full text-sm hover:bg-green-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-plant-green text-plant-green px-8 py-3 rounded-full font-medium hover:bg-plant-green hover:text-white transition">
+                    View All Plants
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supplies Section -->
+    <section id="supplies" class="py-20 bg-plant-green text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-plant-light font-medium">Garden Essentials</span>
+                <h2 class="text-4xl font-bold mt-2">Supplies & Accessories</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/10 backdrop-blur p-8 rounded-2xl text-center hover:bg-white/20 transition">
+                    <span class="text-5xl block mb-4">🪴</span>
+                    <h3 class="text-xl font-bold mb-2">Pots & Planters</h3>
+                    <p class="text-white/70 text-sm mb-4">Ceramic, terracotta & more</p>
+                    <span class="text-plant-light font-bold">From $12.99</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-8 rounded-2xl text-center hover:bg-white/20 transition">
+                    <span class="text-5xl block mb-4">🌍</span>
+                    <h3 class="text-xl font-bold mb-2">Soil & Fertilizers</h3>
+                    <p class="text-white/70 text-sm mb-4">Premium organic blends</p>
+                    <span class="text-plant-light font-bold">From $8.99</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-8 rounded-2xl text-center hover:bg-white/20 transition">
+                    <span class="text-5xl block mb-4">💧</span>
+                    <h3 class="text-xl font-bold mb-2">Watering Tools</h3>
+                    <p class="text-white/70 text-sm mb-4">Cans, misters & systems</p>
+                    <span class="text-plant-light font-bold">From $14.99</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-8 rounded-2xl text-center hover:bg-white/20 transition">
+                    <span class="text-5xl block mb-4">✂️</span>
+                    <h3 class="text-xl font-bold mb-2">Garden Tools</h3>
+                    <p class="text-white/70 text-sm mb-4">Pruners, shovels & sets</p>
+                    <span class="text-plant-light font-bold">From $19.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-gradient-to-br from-plant-light to-plant-sage p-12 rounded-3xl text-center text-white">
+                    <span class="text-8xl block mb-4">🌱</span>
+                    <h3 class="text-2xl font-bold">Growing Green Since 2009</h3>
+                    <p class="opacity-80 mt-2">Your trusted plant experts</p>
+                </div>
+                <div>
+                    <span class="text-plant-sage font-medium">About Green Haven</span>
+                    <h2 class="text-4xl font-bold text-plant-green mt-2 mb-6">We Grow Happiness</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded by plant enthusiasts, Green Haven started with a simple mission: to help everyone experience the joy of growing plants. From tiny seedlings to majestic trees, we nurture every plant with care.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our team of horticulture experts carefully selects and cares for each plant, ensuring they arrive at your home healthy and ready to thrive. We also offer free plant care consultations!
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="bi bi-check-circle-fill text-plant-green text-xl mr-3"></i>
+                            <span>30-Day Plant Happiness Guarantee</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="bi bi-check-circle-fill text-plant-green text-xl mr-3"></i>
+                            <span>Free Plant Care Support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="bi bi-check-circle-fill text-plant-green text-xl mr-3"></i>
+                            <span>Eco-Friendly Packaging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Tips -->
+    <section class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-plant-sage font-medium">Plant Care</span>
+                <h2 class="text-4xl font-bold text-plant-green mt-2">Care Tips for Your Plants</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="bi bi-droplet-fill text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-plant-green mb-3">Watering Guide</h3>
+                    <p class="text-gray-600">Most indoor plants prefer to dry out slightly between waterings. Check soil moisture before watering - stick your finger 1 inch deep.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="bi bi-sun-fill text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-plant-green mb-3">Light Requirements</h3>
+                    <p class="text-gray-600">Match your plants to available light. Most houseplants thrive in bright, indirect light. Rotate plants regularly for even growth.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="bi bi-flower1 text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-plant-green mb-3">Feeding Tips</h3>
+                    <p class="text-gray-600">Feed your plants during growing season (spring-summer) with balanced fertilizer. Reduce feeding in fall and winter when growth slows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-plant-sage font-medium">Contact Us</span>
+                    <h2 class="text-4xl font-bold text-plant-green mt-2 mb-6">Visit Our Garden Center</h2>
+                    <p class="text-gray-600 mb-8">Stop by our store to explore our full collection, get expert advice, or just enjoy the greenery!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-plant-light/30 rounded-full flex items-center justify-center">
+                                <i class="bi bi-geo-alt text-plant-green text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-plant-green">123 Garden Lane, Green City, GC 54321</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-plant-light/30 rounded-full flex items-center justify-center">
+                                <i class="bi bi-telephone text-plant-green text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-plant-green">(555) PLANT-ME</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-plant-light/30 rounded-full flex items-center justify-center">
+                                <i class="bi bi-clock text-plant-green text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-plant-green">Mon-Sat: 9AM - 7PM | Sun: 10AM - 5PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-green-50 p-8 rounded-2xl">
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <input type="text" placeholder="Your Name" class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-plant-green">
+                            <input type="email" placeholder="Email" class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-plant-green">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full border border-gray-200 rounded-xl px-4 py-3 mb-4 focus:outline-none focus:border-plant-green">
+                        <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-200 rounded-xl px-4 py-3 mb-4 focus:outline-none focus:border-plant-green"></textarea>
+                        <button type="submit" class="w-full bg-plant-green text-white py-4 rounded-xl font-medium hover:bg-green-800 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-plant-light/30">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <span class="text-5xl block mb-4">🌿</span>
+            <h2 class="text-3xl font-bold text-plant-green mb-4">Join Our Plant Family</h2>
+            <p class="text-gray-600 mb-6">Get exclusive offers, plant care tips, and first access to new arrivals!</p>
+            <div class="flex max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-l-full border border-r-0 border-gray-300 focus:outline-none focus:border-plant-green">
+                <button class="bg-plant-green text-white px-6 py-3 rounded-r-full hover:bg-green-800 transition">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-plant-green text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-3xl">🌿</span>
+                        <span class="text-xl font-bold">Green Haven</span>
+                    </div>
+                    <p class="text-white/70 text-sm">Bringing nature home since 2009. Your trusted source for healthy, happy plants.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-white/70 text-sm">
+                        <li><a href="#" class="hover:text-plant-light transition">Indoor Plants</a></li>
+                        <li><a href="#" class="hover:text-plant-light transition">Outdoor Plants</a></li>
+                        <li><a href="#" class="hover:text-plant-light transition">Succulents</a></li>
+                        <li><a href="#" class="hover:text-plant-light transition">Supplies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Help</h4>
+                    <ul class="space-y-2 text-white/70 text-sm">
+                        <li><a href="#" class="hover:text-plant-light transition">Care Guides</a></li>
+                        <li><a href="#" class="hover:text-plant-light transition">Shipping</a></li>
+                        <li><a href="#" class="hover:text-plant-light transition">Returns</a></li>
+                        <li><a href="#" class="hover:text-plant-light transition">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-plant-light transition">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-plant-light transition">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-plant-light transition">
+                            <i class="bi bi-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center text-white/70 text-sm">
+                <p>&copy; 2024 Green Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

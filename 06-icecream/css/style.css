@@ -1,0 +1,46 @@
+/* Frosty Scoops - Ice Cream Store Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+}
+
+.delay-100 {
+    animation-delay: 0.5s;
+}
+
+.delay-200 {
+    animation-delay: 1s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff5f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff6b9d, #b197fc);
+    border-radius: 4px;
+}
