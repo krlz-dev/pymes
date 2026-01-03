@@ -1,5 +1,9 @@
 # PyMES - Small Business HTML Templates
 
+[![Deploy to GitHub Pages](https://github.com/krlz-dev/pymes/actions/workflows/deploy.yml/badge.svg)](https://github.com/krlz-dev/pymes/actions/workflows/deploy.yml)
+
+**Live Demo:** [https://krlz-dev.github.io/pymes/](https://krlz-dev.github.io/pymes/)
+
 A collection of 10 professional, responsive HTML/CSS templates designed for small businesses (PyMES - Pequeñas y Medianas Empresas). Built with Bootstrap 5 and Tailwind CSS.
 
 ## Templates Included
