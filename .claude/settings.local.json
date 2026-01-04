@@ -6,7 +6,12 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd 10 professional HTML/CSS templates for small businesses\n\nTemplates included:\n- 01: Fast Food Restaurant \\(Bootstrap\\)\n- 02: Hotel & Tourism \\(Tailwind\\)\n- 03: Education/Academy \\(Bootstrap\\)\n- 04: Healthcare/Medical \\(Tailwind\\)\n- 05: Bakery \\(Bootstrap\\)\n- 06: Ice Cream Store \\(Tailwind\\)\n- 07: Clothes Store \\(Bootstrap\\)\n- 08: Pet Shop \\(Tailwind\\)\n- 09: Small Market/Grocery \\(Bootstrap\\)\n- 10: Plants Store \\(Tailwind\\)\n\nAll templates are fully responsive and use CDN-based dependencies.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git push:*)",
-      "Bash(gh repo sync:*)"
+      "Bash(gh repo sync:*)",
+      "WebSearch",
+      "Bash(git remote set-url:*)",
+      "Bash(gh run:*)",
+      "Bash(curl:*)",
+      "Bash(ls:*)"
     ]
   }
 }
